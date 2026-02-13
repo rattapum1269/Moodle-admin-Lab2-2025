@@ -475,14 +475,10 @@ Category: ชั้นมัธยมศึกษาปีที่ 1
 - Role: Student
 
 **บันทึกรูปหน้า Enroll นักเรียน:** 
-```
- # บันทึกรูปหน้า Enroll
-```
+<img width="1918" height="1012" alt="image" src="https://github.com/user-attachments/assets/97bb70a2-6a7f-4594-a75a-859e8525206c" />
 
 **บันทึกรูปหน้า Course ที่ Enrol User แล้ว :** 
-```
- # บันทึกรูปหน้า Course ที่ Enrol User แล้ว
-```
+<img width="1900" height="1022" alt="image" src="https://github.com/user-attachments/assets/5dbed314-1c7d-4ab4-b1df-dea37e1f04e7" />
 
 #### 6.2 เพิ่ม Activities
 1) ทดสอบ Login เข้าระบบด้วย User Teacher ที่ได้สร้างขึ้น
@@ -512,16 +508,30 @@ Grade to pass: 60%
 ```
 
 **บันทึกรูปหน้า Course ที่เพิ่มเติม Activities:** 
-```
- # บันทึกรูปหน้า Course ที่เพิ่มเติม Activities
-```
+<img width="1918" height="968" alt="image" src="https://github.com/user-attachments/assets/73fc2e09-058f-4e38-beb2-c1f7b8062b0e" />
+
 
 
 ## คำถามท้ายการทดลอง
 
 **1.** อธิบายความแตกต่างระหว่าง Category และ Cohort 
+**Category**  
+- ใช้จัดหมวดหมู่รายวิชา (Course structure)  
+- เป็นโครงสร้างแบบลำดับชั้น (Parent / Child)  
+- ใช้เพื่อความเป็นระเบียบของระบบ  
+
+**Cohort**  
+- เป็นกลุ่มผู้ใช้งาน (User group ระดับระบบ)  
+- ใช้สำหรับ enroll ผู้ใช้เข้าเรียนพร้อมกัน  
+- ไม่เกี่ยวกับโครงสร้างรายวิชา 
 
 **2.** เหตุใดควรใช้ Cohort sync 
+- ช่วย enroll ผู้เรียนจำนวนมากได้อัตโนมัติ  
+- ลดเวลาและลดความผิดพลาดจากการเพิ่มรายคน  
+- รองรับการเพิ่ม/ย้ายผู้เรียนได้ง่าย เพียงเพิ่มเข้า Cohort
 
 **3.** Best practices สำหรับ Category structure คือแบบใด
-
+- จัดโครงสร้างตาม ปีการศึกษา → ภาคเรียน → ระดับชั้น  
+- ตั้ง ID number ให้เป็นมาตรฐาน (เช่น AY2568-S1-M1)  
+- ไม่ทำโครงสร้างลึกเกินไป  
+- แยกหมวดหมู่ปีการศึกษาเก่าออกเป็น Archive  
